@@ -142,7 +142,7 @@ class KitapIslem(Islem):
         kayitNo = input("Güncellemek istediğiniz kitabın Kayıt No'sunu girin: ").strip()
         for kitap in self.kitaplar:
             if kitap.kayitNo == kayitNo:
-                print(f"Mevcut Bilgiler -> Başlık: {kitap.baslik}, Yazar: {kitap.yazar}")
+                print(f"Mevcut Bilgiler -> Başlık: {kitap.baslik} | Yazar: {kitap.yazar}")
                 kitap.baslik = input("Yeni Başlık girin: ").strip()
                 kitap.yazar = input("Yeni Yazar girin: ").strip()
                 kitap.sayfa_sayisi = input("Yeni Sayfa Sayısı girin: ").strip()
@@ -203,7 +203,7 @@ class DergiIslem(Islem):
         kayitNo = input("Güncellemek istediğiniz derginin Kayıt No'sunu girin: ").strip()
         for dergi in self.dergiler:
             if dergi.kayitNo == kayitNo:
-                print(f"Mevcut Bilgiler -> Başlık: {dergi.baslik}, Sayı No: {dergi.sayi_no}")
+                print(f"Mevcut Bilgiler -> Başlık: {dergi.baslik} | Sayı No: {dergi.sayi_no}")
                 dergi.baslik = input("Yeni Başlık girin: ").strip()
                 dergi.yayin_donemi = input("Yeni Yayın Dönemi girin: ").strip()
                 dergi.sayi_no = input("Yeni Sayı No girin: ").strip()
