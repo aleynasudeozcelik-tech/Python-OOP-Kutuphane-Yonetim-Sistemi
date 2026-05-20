@@ -21,6 +21,12 @@ class Kaynak(ABC):
     def kayitNo(self, value):
         self._kayitNo = value
 
+    def ekle(self):
+        pass
+
+    def sil(self):
+        pass
+
 
 class Kitap(Kaynak):
     def __init__(self, baslik, kayitNo, yazar, sayfa_sayisi):
